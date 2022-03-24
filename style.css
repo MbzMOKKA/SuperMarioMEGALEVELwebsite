@@ -1,0 +1,200 @@
+@font-face{
+    font-family: 'OpenSans';
+    src: url('fonts/OpenSans-Regular-webfont.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face{
+    font-family: 'SuperMario';
+    src: url('fonts/SuperMario.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+body{
+    background-image: url("assets/spr_background.png");
+    background-attachment: fixed;
+    margin: 0px;
+}
+*{
+    box-sizing: border-box; /* Opera/IE 8+ */
+    -moz-box-sizing: border-box; /* Firefox, autres Gecko */
+    -webkit-box-sizing: border-box; /* Safari/Chrome, autres WebKit */
+ }
+/*Global*/
+#page_content{
+    width: 85%;
+    margin: auto;
+    font-family: "SuperMario","sans-serif";
+    font-size: 24px;
+}
+/*Haut*/
+header{
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 90px;
+    text-align: center;
+}
+img[alt="smml title"]{
+    width: 30%;
+    height: 30%;
+}
+/*Navigation*/
+nav ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0px;
+    margin: 0px;
+    /*border: 2px rgba(248, 248, 248, 0.5) solid;*/
+}
+nav li{
+    font-size: 60px;
+    list-style: none;
+    text-transform: uppercase;
+    margin: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    /*border: 1px rgba(0, 0, 0, 0.5) solid;*/
+}
+nav ul a{
+    text-decoration: none;
+    text-shadow: 6px 6px black;
+    color: rgb(86, 230, 134);
+}
+nav ul a:hover{
+    color: rgb(255, 255, 255);
+}
+nav ul a:active{
+    color: rgb(255, 0, 0);
+}
+#current_page{
+    color: rgba(255, 255, 255, 0.75);
+}
+/*Pied*/
+footer{
+    background-color: rgba(0, 0, 0, 0.75);
+    margin-top: 100px;
+    padding: 5px;
+    position: relative;
+    bottom: 0px;
+}
+footer ul{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+footer li{
+    font-size: 20px;
+    list-style: none;
+    width: 150px;
+}
+footer ul a{
+    font-family: "OpenSans","sans-serif";
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+}
+footer img{
+    width: 60px;
+    height: 60px;
+    margin: 5px;
+}
+/*Contenu*/
+section{
+    background: linear-gradient(#00000086, #c9716e31);
+    border-top: 10px rgba(0, 0, 0, 0.5) solid;
+    border-bottom: 10px rgba(255, 255, 255, 0.5) solid;
+    border-radius: 1em;
+    padding: 30px;
+    font-family: "OpenSans","sans-serif";
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 20px;
+    margin: 0px;
+    text-align: left;
+    flex: 2;
+    color :rgb(221, 221, 221);
+}
+h1{
+    margin: 0px;
+    margin-bottom: 30px;
+    font-size: 50px;
+}
+article a{
+    color :rgb(253, 164, 148);
+    text-decoration: none;
+}
+.game_presentation{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.game_presentation p{
+    font-weight: bold;
+    margin: 0px;
+    padding-bottom: 30px;
+}
+/*Illustrations de coté*/
+aside{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+    flex: 1;
+}
+aside img{
+    width: 100%;
+    box-shadow: 6px 6px rgba(0, 0, 0, 1);
+}
+/*Bouton télécharger*/
+.download_button{
+    text-align: center;
+    margin-top: 90px;
+}
+#dl_link{
+    background: url('assets/spr_button.png') repeat-x;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+    border: 3px rgba(0, 0, 0, 1) solid;
+    border-radius: 0.7em;
+    margin: 0px;
+    padding: 0px;
+}
+#dl_link a{
+    font-family: "SuperMario","sans-serif";
+    font-size: 80px;
+    padding: 20px;
+    color: white;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+#dl_link a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
+#dl_link a:active{
+    color: black;
+}
+#dl_version{
+    text-shadow: 3px 3px 6px black;
+    margin: 20px;
+    padding: 0px;
+}
