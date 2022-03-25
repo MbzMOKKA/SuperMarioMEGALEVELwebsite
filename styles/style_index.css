@@ -24,6 +24,7 @@ aside img{
     box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
     border: 3px rgba(0, 0, 0, 1) solid;
     border-radius: 0.7em;
+    overflow: hidden;
     margin: 0px;
     padding: 0px;
 }
@@ -34,8 +35,11 @@ aside img{
     color: white;
     font-weight: normal;
     text-transform: uppercase;
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
 }
 #dl_link a:hover{
+    background-color: rgb(255, 252, 61);
     color: rgba(0, 0, 0, 0.5);
 }
 #dl_link a:active{
