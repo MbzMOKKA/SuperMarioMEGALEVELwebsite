@@ -20,7 +20,7 @@
     background-color: rgba(0, 0, 0, 0.25);
     border-radius: 40px;
     overflow: hidden;
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function: ease;
 }
 #teasers li:hover{
@@ -38,13 +38,15 @@
     position: relative;
     top: 50%;
     left: 50%;
+    filter: blur(15px);
     transform: translate(-50%, -50%);
-    transition-duration: 0.5s;
+    transition-duration: 0.3s;
     transition-timing-function: ease;
 }
 #teasers li:hover .media{
     width: 100%;
     height: 100%;
+    filter: blur(0px);
 }
 #teasers li h2{
     z-index: 1;
@@ -58,10 +60,8 @@
     margin: 0px;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     color: white;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
 }
 #teasers li:hover h2{
     background-color: rgba(0, 0, 0, 0);
