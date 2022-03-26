@@ -1,52 +1,75 @@
-article{
-    padding-right: 20px;
+@charset "UTF-8";
+article {
+  padding-right: 20px;
 }
+
 /*Illustrations de coté*/
-aside{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 0px;
-    margin: 0px;
-    flex: 1;
+aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
 }
-aside img{
-    width: 100%;
-    box-shadow: 5px 5px 20px black;
+
+aside img {
+  width: 100%;
+  -webkit-box-shadow: 5px 5px 20px black;
+          box-shadow: 5px 5px 20px black;
 }
+
 /*Bouton télécharger*/
-.download_button{
-    text-align: center;
-    margin-top: 90px;
+.download_button {
+  text-align: center;
+  margin-top: 90px;
 }
-#dl_link{
-    background: url('../assets/spr_button.png') repeat-x;
-    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-    border: 3px rgba(0, 0, 0, 1) solid;
-    border-radius: 0.7em;
-    overflow: hidden;
-    margin: 0px;
-    padding: 0px;
+
+#dl_link {
+  background: url("../assets/spr_button.png") repeat-x;
+  -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  border: 3px black solid;
+  border-radius: 0.7em;
+  overflow: hidden;
+  margin: 0px;
+  padding: 0px;
 }
-#dl_link a{
-    font-family: "SuperMario","sans-serif";
-    font-size: 80px;
-    padding: 20px;
-    color: white;
-    font-weight: normal;
-    text-transform: uppercase;
-    transition-duration: 0.3s;
-    transition-timing-function: ease;
+
+#dl_link a {
+  font-family: "SuperMario","sans-serif";
+  font-size: 80px;
+  padding: 20px;
+  color: white;
+  font-weight: normal;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease;
+          transition-timing-function: ease;
 }
-#dl_link a:hover{
-    background-color: rgb(255, 252, 61);
-    color: rgba(0, 0, 0, 0.5);
+
+#dl_link a:hover {
+  background-color: #fffc3d;
+  color: rgba(0, 0, 0, 0.5);
 }
-#dl_link a:active{
-    color: black;
+
+#dl_link a:active {
+  color: black;
 }
-#dl_version{
-    text-shadow: 3px 3px 6px black;
-    margin: 20px;
-    padding: 0px;
+
+#dl_version {
+  text-shadow: 3px 3px 6px black;
+  margin: 20px;
+  padding: 0px;
 }
+/*# sourceMappingURL=style_index.css.map */
