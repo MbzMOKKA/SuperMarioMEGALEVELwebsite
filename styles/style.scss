@@ -1,3 +1,12 @@
+$color-effect-positive : rgb(91, 214, 91);
+$color-effect-negative : rgb(255, 77, 77);
+@mixin font-mario {
+    font-family: "SuperMario","sans-serif";
+}
+@mixin font-standard {
+    font-family: "OpenSans","sans-serif";
+}
+
 @font-face{
     font-family: 'OpenSans';
     src: url('../fonts/OpenSans-Regular-webfont.woff');
@@ -24,7 +33,7 @@ body{
 #page_content{
     width: 85%;
     margin: auto;
-    font-family: "SuperMario","sans-serif";
+    @include font-mario();
     font-size: 24px;
 }
 /*Haut*/
@@ -48,7 +57,6 @@ nav ul{
     justify-content: flex-start;
     padding: 0px;
     margin: 0px;
-    /*border: 2px rgba(248, 248, 248, 0.5) solid;*/
 }
 nav li{
     font-size: 60px;
@@ -58,7 +66,6 @@ nav li{
     margin-top: 5px;
     margin-bottom: 5px;
     padding: 5px;
-    /*border: 1px rgba(0, 0, 0, 0.5) solid;*/
 }
 nav ul a{
     text-decoration: none;
@@ -94,7 +101,7 @@ footer li{
     width: 150px;
 }
 footer ul a{
-    font-family: "OpenSans","sans-serif";
+    @include font-standard();
     text-decoration: none;
     color: rgb(255, 255, 255);
     display: flex;
@@ -115,7 +122,7 @@ section{
     border-bottom: 10px rgba(255, 255, 255, 0.5) solid;
     border-radius: 1em;
     padding: 30px;
-    font-family: "OpenSans","sans-serif";
+    @include font-standard();
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -142,6 +149,12 @@ h1{
     margin-bottom: 30px;
     font-size: 50px;
 }
+h2{
+    @include font-mario();
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0;
+}
 .main_text{
     width: 100%;
     display: flex;
@@ -154,4 +167,13 @@ h1{
     font-weight: bold;
     margin: 0px;
     padding-bottom: 30px;
+}
+.balance{
+    font-weight: normal;
+    &_buff{
+        color: $color-effect-positive;
+    }
+    &_nerf{
+        color: $color-effect-negative;
+    }
 }

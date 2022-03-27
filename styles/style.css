@@ -66,7 +66,6 @@ nav ul {
           justify-content: flex-start;
   padding: 0px;
   margin: 0px;
-  /*border: 2px rgba(248, 248, 248, 0.5) solid;*/
 }
 
 nav li {
@@ -77,7 +76,6 @@ nav li {
   margin-top: 5px;
   margin-bottom: 5px;
   padding: 5px;
-  /*border: 1px rgba(0, 0, 0, 0.5) solid;*/
 }
 
 nav ul a {
@@ -211,6 +209,13 @@ h1 {
   font-size: 50px;
 }
 
+h2 {
+  font-family: "SuperMario","sans-serif";
+  font-size: 60px;
+  font-weight: normal;
+  margin: 0;
+}
+
 .main_text {
   width: 100%;
   display: -webkit-box;
@@ -234,5 +239,17 @@ h1 {
   font-weight: bold;
   margin: 0px;
   padding-bottom: 30px;
+}
+
+.balance {
+  font-weight: normal;
+}
+
+.balance_buff {
+  color: #5bd65b;
+}
+
+.balance_nerf {
+  color: #ff4d4d;
 }
 /*# sourceMappingURL=style.css.map */
