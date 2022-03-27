@@ -1,0 +1,25 @@
+h2{
+    font-family: "SuperMario","sans-serif";
+    font-size: 60px;
+    font-weight: normal;
+    margin: 0;
+}
+em{
+    font-style: normal;
+    font-weight: bold;
+    color: aqua;
+}
+.balance{
+    font-weight: normal;
+    &_buff{
+        color: rgb(91, 214, 91);
+    }
+    &_nerf{
+        color: rgb(255, 77, 77);
+    }
+}
+.patch-list{
+    li{
+        margin-bottom: 10px;
+    }
+}
