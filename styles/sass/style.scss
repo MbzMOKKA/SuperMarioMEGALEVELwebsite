@@ -1,11 +1,5 @@
-$color-effect-positive : rgb(91, 214, 91);
-$color-effect-negative : rgb(255, 77, 77);
-@mixin font-mario {
-    font-family: "SuperMario","sans-serif";
-}
-@mixin font-standard {
-    font-family: "OpenSans","sans-serif";
-}
+@import "./utils/variables";
+@import "./utils/mixins";
 
 @font-face{
     font-family: 'OpenSans';
