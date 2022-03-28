@@ -9,18 +9,18 @@ $color-effect-negative : rgb(255, 77, 77);
 
 @font-face{
     font-family: 'OpenSans';
-    src: url('../fonts/OpenSans-Regular-webfont.woff');
+    src: url('../../fonts/OpenSans-Regular-webfont.woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face{
     font-family: 'SuperMario';
-    src: url('../fonts/SuperMario.ttf');
+    src: url('../../fonts/SuperMario.ttf');
     font-weight: normal;
     font-style: normal;
 }
 body{
-    background-image: url("../assets/spr_background.png");
+    background-image: url("../../assets/spr_background.png");
     background-attachment: fixed;
     margin: 0px;
 }
