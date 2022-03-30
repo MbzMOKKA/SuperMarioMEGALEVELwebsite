@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAGA,AAAA,EAAE,AAAA,CACE,UAAU,CAAE,MAAM,CAClB,WAAW,CAAE,IAAI,CACjB,KAAK,CAAE,IAAI,CACd,AACD,AACI,WADO,CACP,EAAE,AAAA,CACE,aAAa,CAAE,IAAI,CACtB",
+    "mappings": "AAGA,AAAA,EAAE,CAAA;EACE,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,IAAI;CACd;;AACD,AACI,WADO,CACP,EAAE,CAAA;EACE,aAAa,EAAE,IAAI;CACtB",
     "sources": [
         "../sass/style_patchnotes.scss",
         "../sass/utils/_variables.scss",

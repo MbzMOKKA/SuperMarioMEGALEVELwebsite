@@ -1,2 +1,255 @@
-@font-face{font-family:'OpenSans';src:url("../../fonts/OpenSans-Regular-webfont.woff");font-weight:normal;font-style:normal}@font-face{font-family:'SuperMario';src:url("../../fonts/SuperMario.ttf");font-weight:normal;font-style:normal}body{background-image:url("../../assets/spr_background.png");background-attachment:fixed;margin:0px}*{box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box}#page_content{width:85%;margin:auto;font-family:"SuperMario","sans-serif";font-size:24px}header{width:100%;height:100%;margin:auto;margin-top:15px;margin-bottom:90px;text-align:center}img[alt="smml title"]{width:30%;height:30%}nav ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;padding:0px;margin:0px}nav li{font-size:60px;list-style:none;text-transform:uppercase;margin:20px;margin-top:5px;margin-bottom:5px;padding:5px}nav ul a{text-decoration:none;text-shadow:6px 6px black;color:#56e686}nav ul a:hover{color:#fff}nav ul a:active{color:red}#current_page{color:rgba(255,255,255,0.75)}footer{background-color:rgba(0,0,0,0.75);margin-top:100px;padding:5px;position:relative;bottom:0px}footer ul{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}footer li{font-size:20px;list-style:none;width:150px}footer ul a{font-family:"OpenSans","sans-serif";text-decoration:none;color:#fff;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-align:center;-ms-flex-align:center;align-items:center;text-align:center}footer img{width:60px;height:60px;margin:5px}section{background:-webkit-gradient(linear, left top, left bottom, from(#00000086), to(#c9716e31));background:linear-gradient(#00000086, #c9716e31);border-top:10px rgba(0,0,0,0.5) solid;border-bottom:10px rgba(255,255,255,0.5) solid;border-radius:1em;padding:30px;font-family:"OpenSans","sans-serif";display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;-ms-flex-wrap:nowrap;flex-wrap:nowrap;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center}article{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;padding:0px;margin:0px;text-align:left;-webkit-box-flex:2;-ms-flex:2;flex:2;color:#ddd}article a{color:#fda494;text-decoration:none}h1{margin:0px;margin-bottom:30px;font-size:50px}h2{font-family:"SuperMario","sans-serif";font-size:60px;font-weight:normal;margin:0}.main_text{width:100%;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;-webkit-box-align:start;-ms-flex-align:start;align-items:flex-start;-webkit-box-pack:start;-ms-flex-pack:start;justify-content:flex-start;-ms-flex-wrap:wrap;flex-wrap:wrap}.main_text p{font-weight:bold;margin:0px;padding-bottom:30px}.balance{font-weight:normal}.balance_buff{color:#5bd65b}.balance_nerf{color:#ff4d4d}
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../../fonts/OpenSans-Regular-webfont.woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SuperMario';
+  src: url("../../fonts/SuperMario.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-image: url("../../assets/spr_background.png");
+  background-attachment: fixed;
+  margin: 0px;
+}
+
+* {
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  -moz-box-sizing: border-box;
+  /* Firefox, autres Gecko */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, autres WebKit */
+}
+
+/*Global*/
+#page_content {
+  width: 85%;
+  margin: auto;
+  font-family: "SuperMario","sans-serif";
+  font-size: 24px;
+}
+
+/*Haut*/
+header {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 90px;
+  text-align: center;
+}
+
+img[alt="smml title"] {
+  width: 30%;
+  height: 30%;
+}
+
+/*Navigation*/
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav li {
+  font-size: 60px;
+  list-style: none;
+  text-transform: uppercase;
+  margin: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+}
+
+nav ul a {
+  text-decoration: none;
+  text-shadow: 6px 6px black;
+  color: #56e686;
+}
+
+nav ul a:hover {
+  color: white;
+}
+
+nav ul a:active {
+  color: red;
+}
+
+#current_page {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+/*Pied*/
+footer {
+  background-color: rgba(0, 0, 0, 0.75);
+  margin-top: 100px;
+  padding: 5px;
+  position: relative;
+  bottom: 0px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+footer li {
+  font-size: 20px;
+  list-style: none;
+  width: 150px;
+}
+
+footer ul a {
+  font-family: "OpenSans","sans-serif";
+  text-decoration: none;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+footer img {
+  width: 60px;
+  height: 60px;
+  margin: 5px;
+}
+
+/*Contenu*/
+section {
+  background: -webkit-gradient(linear, left top, left bottom, from(#00000086), to(#c9716e31));
+  background: linear-gradient(#00000086, #c9716e31);
+  border-top: 10px rgba(0, 0, 0, 0.5) solid;
+  border-bottom: 10px rgba(255, 255, 255, 0.5) solid;
+  border-radius: 1em;
+  padding: 30px;
+  font-family: "OpenSans","sans-serif";
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+article {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+  text-align: left;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  color: #dddddd;
+}
+
+article a {
+  color: #fda494;
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0px;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: "SuperMario","sans-serif";
+  font-size: 60px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.main_text {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main_text p {
+  font-weight: bold;
+  margin: 0px;
+  padding-bottom: 30px;
+}
+
+.balance {
+  font-weight: normal;
+}
+
+.balance_buff {
+  color: #5bd65b;
+}
+
+.balance_nerf {
+  color: #ff4d4d;
+}
 /*# sourceMappingURL=style.css.map */

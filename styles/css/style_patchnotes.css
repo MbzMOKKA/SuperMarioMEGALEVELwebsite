@@ -1,2 +1,10 @@
-em{font-style:normal;font-weight:bold;color:aqua}.patch-list li{margin-bottom:10px}
+em {
+  font-style: normal;
+  font-weight: bold;
+  color: aqua;
+}
+
+.patch-list li {
+  margin-bottom: 10px;
+}
 /*# sourceMappingURL=style_patchnotes.css.map */
