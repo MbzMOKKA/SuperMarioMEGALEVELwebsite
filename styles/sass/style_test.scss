@@ -1,0 +1,83 @@
+@import "./utils/variables";
+@import "./utils/mixins";
+
+$cd-txt: #6300a0;
+$cd-box: #fff;
+$cd-txt--invalid: #fff;
+$cd-danger: #b20a37;
+$cd-border_thickness: 5px;
+$cd-btn: #011c37;
+$cd-txt2: #15DEA5;
+
+.container {
+  background-color: rgb(206, 235, 238);
+  padding: 0px;
+}
+.form2 {
+    width: 50%;
+    text-align: center;
+    h3{
+        margin: 0;
+        color: $cd-danger;
+        opacity: 0;
+        transition: opacity 200ms;
+    }
+    label{
+        color: $cd-txt;
+    }
+    &__group {
+        & input {
+            text-align: center;
+            border: $cd-border_thickness solid $cd-box;
+            border-radius: 100rem;
+            color: $cd-txt;
+            font-size: 2.5rem;
+            outline: none;
+            padding: .5rem 1.5rem;
+            width: 100%;
+            transition: background-color 500ms;
+            transition: border-color 200ms;
+            transition: transform 1000ms;
+            &:focus {
+                border: $cd-border_thickness solid $cd-txt;
+                transform: skew(150deg,150deg);
+            }
+            &:not(:focus):invalid {
+                background: $cd-danger;
+                border: $cd-border_thickness solid $cd-txt--invalid;
+                color: $cd-txt--invalid;
+                &+h3{
+                    opacity: 1;
+                }
+            }
+            &:not(:focus):valid {
+                border: $cd-border_thickness solid $cd-txt2;
+            }
+        }
+    }
+}
+form{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+input[type="checkbox"]{
+    display: none;
+    &+label{
+        padding: 20px;
+        margin-bottom: 10px;
+        width: 60%;
+        border: 3px black solid;
+        border-radius: 20px;
+        display: block;
+        transition: all 6000ms cubic-bezier(0.1,0.8,0.2,1);
+        background-color: #ffffff00;
+    }
+    &:checked+label{
+        width: 100%;
+        background-color: #ffffff;
+        h2,p{
+            color: black;
+        }
+    }
+}
