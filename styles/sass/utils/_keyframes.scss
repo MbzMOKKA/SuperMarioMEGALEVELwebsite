@@ -17,3 +17,19 @@ $shake-intensity: 2%;
         transform: translateX(-1*$shake-intensity);
     }
 }
+@keyframes bars {
+    0% {
+        transform: scaleY(0.25);
+    }
+    100% {
+        transform: scaleY(1.0);
+    }
+}
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

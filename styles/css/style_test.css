@@ -42,6 +42,50 @@
   }
 }
 
+@-webkit-keyframes bars {
+  0% {
+    -webkit-transform: scaleY(0.25);
+            transform: scaleY(0.25);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@keyframes bars {
+  0% {
+    -webkit-transform: scaleY(0.25);
+            transform: scaleY(0.25);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+            transform: scaleY(1);
+  }
+}
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
 .container {
   background-color: #ceebee;
   padding: 0px;
@@ -154,5 +198,116 @@ input[type="checkbox"]:checked + label h2, input[type="checkbox"]:checked + labe
           transform-origin: left;
   -webkit-transform: scaleX(0.5) scaleY(0.5);
           transform: scaleX(0.5) scaleY(0.5);
+}
+
+.spin {
+  background-color: #15DEA5;
+  margin: 25px;
+  width: 100px;
+  height: 100px;
+  -webkit-animation: spin 300ms linear infinite paused;
+          animation: spin 300ms linear infinite paused;
+}
+
+.spin:hover {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.load {
+  width: 30vh;
+  height: 22.5vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.load__bar {
+  background-color: #15DEA5;
+  width: 3vh;
+  height: 100%;
+  -webkit-animation: bars 400ms;
+          animation: bars 400ms;
+  -webkit-animation-fill-mode: backwards;
+          animation-fill-mode: backwards;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+}
+
+.load__bar--1 {
+  -webkit-animation-delay: 80ms;
+          animation-delay: 80ms;
+}
+
+.load__bar--1-inv {
+  -webkit-animation-delay: 800ms;
+          animation-delay: 800ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+
+.load__bar--2 {
+  -webkit-animation-delay: 160ms;
+          animation-delay: 160ms;
+}
+
+.load__bar--2-inv {
+  -webkit-animation-delay: 1285ms;
+          animation-delay: 1285ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+
+.load__bar--3 {
+  -webkit-animation-delay: 240ms;
+          animation-delay: 240ms;
+}
+
+.load__bar--3-inv {
+  -webkit-animation-delay: 1575ms;
+          animation-delay: 1575ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+
+.load__bar--4 {
+  -webkit-animation-delay: 320ms;
+          animation-delay: 320ms;
+}
+
+.load__bar--4-inv {
+  -webkit-animation-delay: 1100ms;
+          animation-delay: 1100ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+
+.load__bar--5 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
+.load__bar--5-inv {
+  -webkit-animation-delay: 865ms;
+          animation-delay: 865ms;
+  animation-direction: alternate-reverse;
+  background-color: #0E397F;
+}
+
+.load__bar:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
 }
 /*# sourceMappingURL=style_test.css.map */

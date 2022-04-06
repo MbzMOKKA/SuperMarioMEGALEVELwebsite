@@ -97,3 +97,53 @@ input[type="checkbox"]{
     }
 }
 //////////////////////////////////////
+$cd-bars: #15DEA5;
+$cd-bars-inv: #0E397F;
+$size: 3vh;
+$num-bars: 5;
+$anim-dur: 400ms;
+$bar-height: 100%;
+$anim-delay: $anim-dur / $num-bars;
+$cube-size : 100px;
+
+.spin {
+    background-color: #15DEA5;
+    margin: 25px;
+    width: $cube-size;
+    height: $cube-size;
+    animation: spin 300ms linear infinite paused;
+    &:hover{
+        animation-play-state: running;
+    }
+}
+.load {
+    width: $size*10;
+    height: $size*7.5;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    &__bar {
+        background-color: $cd-bars;
+        width: $size;
+        height: $bar-height;
+        animation: bars $anim-dur;
+        animation-fill-mode: backwards;
+        animation-direction: alternate;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-play-state: running;
+        @for $i from 1 through $num-bars {
+            &--#{$i} {
+                animation-delay: $anim-delay*$i;
+            }
+            &--#{$i}-inv {
+                animation-delay: ($anim-delay * $i)+(random(100)*15ms);
+                animation-direction: alternate-reverse;
+                background-color: $cd-bars-inv;
+            }
+        }
+        &:hover{
+            animation-play-state: paused;
+        }
+    }
+}
