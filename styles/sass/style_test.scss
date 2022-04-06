@@ -1,5 +1,6 @@
 @import "./utils/variables";
 @import "./utils/mixins";
+@import "./utils/keyframes";
 
 $cd-txt: #6300a0;
 $cd-box: #fff;
@@ -20,7 +21,7 @@ $cd-txt2: #15DEA5;
         margin: 0;
         color: $cd-danger;
         opacity: 0;
-        transition: opacity 200ms;
+        /*transition: opacity 200ms;*/
     }
     label{
         color: $cd-txt;
@@ -35,17 +36,15 @@ $cd-txt2: #15DEA5;
             outline: none;
             padding: .5rem 1.5rem;
             width: 100%;
-            transition: background-color 500ms;
-            transition: border-color 200ms;
-            transition: transform 1000ms;
             &:focus {
                 border: $cd-border_thickness solid $cd-txt;
-                transform: skew(150deg,150deg);
             }
             &:not(:focus):invalid {
                 background: $cd-danger;
                 border: $cd-border_thickness solid $cd-txt--invalid;
                 color: $cd-txt--invalid;
+                animation: headshake 75ms cubic-bezier(.4,.1,.6,.9);
+                animation-iteration-count: 5;
                 &+h3{
                     opacity: 1;
                 }
@@ -81,3 +80,20 @@ input[type="checkbox"]{
         }
     }
 }
+.progress {
+    width: 100%;
+    height: 20px;
+    background-color: darkblue;
+    &__bar{
+        animation-name: progress-bar;
+        animation-delay: 250ms;
+        animation-fill-mode: both;
+        animation-duration: 3000ms;
+        width: 100%;
+        height: 100%;
+        background-color: green;
+        transform-origin: left;
+        transform: scaleX(0.5) scaleY(0.5);
+    }
+}
+//////////////////////////////////////

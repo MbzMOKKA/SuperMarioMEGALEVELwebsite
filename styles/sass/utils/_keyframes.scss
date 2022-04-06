@@ -1,0 +1,19 @@
+@keyframes progress-bar{
+    0%{
+        transform: scaleX(0) scaleY(0.5);
+    }
+    100%{
+        transform: scaleX(1) scaleY(0.5);
+    }
+}
+$shake-intensity: 2%;
+@keyframes headshake {
+    25% {
+        // entièrement à droite
+        transform: translateX($shake-intensity);
+    }
+    75% {
+        // entièrement à gauche
+        transform: translateX(-1*$shake-intensity);
+    }
+}

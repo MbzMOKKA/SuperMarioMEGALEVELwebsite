@@ -1,3 +1,47 @@
+@-webkit-keyframes progress-bar {
+  0% {
+    -webkit-transform: scaleX(0) scaleY(0.5);
+            transform: scaleX(0) scaleY(0.5);
+  }
+  100% {
+    -webkit-transform: scaleX(1) scaleY(0.5);
+            transform: scaleX(1) scaleY(0.5);
+  }
+}
+
+@keyframes progress-bar {
+  0% {
+    -webkit-transform: scaleX(0) scaleY(0.5);
+            transform: scaleX(0) scaleY(0.5);
+  }
+  100% {
+    -webkit-transform: scaleX(1) scaleY(0.5);
+            transform: scaleX(1) scaleY(0.5);
+  }
+}
+
+@-webkit-keyframes headshake {
+  25% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  75% {
+    -webkit-transform: translateX(-2%);
+            transform: translateX(-2%);
+  }
+}
+
+@keyframes headshake {
+  25% {
+    -webkit-transform: translateX(2%);
+            transform: translateX(2%);
+  }
+  75% {
+    -webkit-transform: translateX(-2%);
+            transform: translateX(-2%);
+  }
+}
+
 #teasers {
   width: 100%;
   display: -webkit-box;

@@ -1,10 +1,11 @@
 {
     "version": 3,
-    "mappings": "AAGA,AAAA,EAAE,CAAA;EACE,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,IAAI;CACd;;AACD,AACI,WADO,CACP,EAAE,CAAA;EACE,aAAa,EAAE,IAAI;CACtB",
+    "mappings": "AGAA,UAAU,CAAV,YAAU;EACN,EAAE;IACE,SAAS,EAAE,SAAS,CAAC,WAAW;;EAEpC,IAAI;IACA,SAAS,EAAE,SAAS,CAAC,WAAW;;;;AAIxC,UAAU,CAAV,SAAU;EACN,GAAG;IAEC,SAAS,EAAE,cAA4B;;EAE3C,GAAG;IAEC,SAAS,EAAE,eAA+B;;;;AHZlD,AAAA,EAAE,CAAA;EACE,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,IAAI;EACjB,KAAK,EAAE,IAAI;CACd;;AACD,AACI,WADO,CACP,EAAE,CAAA;EACE,aAAa,EAAE,IAAI;CACtB",
     "sources": [
         "../sass/style_patchnotes.scss",
         "../sass/utils/_variables.scss",
-        "../sass/utils/_mixins.scss"
+        "../sass/utils/_mixins.scss",
+        "../sass/utils/_keyframes.scss"
     ],
     "names": [],
     "file": "style_patchnotes.css"

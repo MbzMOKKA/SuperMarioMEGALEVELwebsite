@@ -1,10 +1,11 @@
 {
     "version": 3,
-    "mappings": "AAEA,AAAA,MAAM,CAAA;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf",
+    "mappings": "AGAA,UAAU,CAAV,YAAU;EACN,EAAE;IACE,SAAS,EAAE,SAAS,CAAC,WAAW;;EAEpC,IAAI;IACA,SAAS,EAAE,SAAS,CAAC,WAAW;;;;AAIxC,UAAU,CAAV,SAAU;EACN,GAAG;IAEC,SAAS,EAAE,cAA4B;;EAE3C,GAAG;IAEC,SAAS,EAAE,eAA+B;;;;AHZlD,AAAA,MAAM,CAAA;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;CACf",
     "sources": [
         "../sass/style_scratch.scss",
         "../sass/utils/_variables.scss",
-        "../sass/utils/_mixins.scss"
+        "../sass/utils/_mixins.scss",
+        "../sass/utils/_keyframes.scss"
     ],
     "names": [],
     "file": "style_scratch.css"
