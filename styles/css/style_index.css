@@ -115,48 +115,7 @@ aside img {
           box-shadow: 5px 5px 20px black;
 }
 
-/*Bouton télécharger*/
-.download_button {
-  text-align: center;
-  margin-top: 90px;
-}
-
-#dl_link {
-  background: url("../../assets/spr_button.png") repeat-x;
-  -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-          box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
-  border: 3px black solid;
-  border-radius: 0.7em;
-  overflow: hidden;
-  margin: 0px;
-  padding: 0px;
-}
-
-#dl_link a {
-  font-family: "SuperMario","sans-serif";
-  font-size: 80px;
-  padding: 20px;
-  color: white;
-  font-weight: normal;
-  text-transform: uppercase;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
-  -webkit-transition-timing-function: ease;
-          transition-timing-function: ease;
-}
-
-#dl_link a:hover {
-  background-color: #fffc3d;
-  color: rgba(0, 0, 0, 0.5);
-}
-
-#dl_link a:active {
-  color: black;
-}
-
-#dl_version {
-  text-shadow: 3px 3px 6px black;
-  margin: 20px;
-  padding: 0px;
+.main_button {
+  margin-top: 70px;
 }
 /*# sourceMappingURL=style_index.css.map */

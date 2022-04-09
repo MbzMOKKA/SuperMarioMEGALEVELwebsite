@@ -107,8 +107,10 @@
   /* Firefox, autres Gecko */
   -webkit-box-sizing: border-box;
   /* Safari/Chrome, autres WebKit */
+  font-weight: normal;
   margin: 0;
   padding: 0;
+  color: #FFF;
 }
 
 body {
@@ -127,15 +129,25 @@ h2 {
   font-weight: normal;
 }
 
-/*Global*/
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
 main {
-  width: 85%;
+  width: 100%;
+  padding: 10%;
+  padding-top: 0;
+  padding-bottom: 0;
   margin: auto;
   font-family: "SuperMario","sans-serif";
   font-size: 24px;
 }
 
-/*Haut*/
+/*####################################   HEADER  ####################################*/
 header {
   padding-top: 70px;
   margin-bottom: 100px;
@@ -160,10 +172,9 @@ header {
 header img {
   width: 50%;
   max-width: 450px;
-  min-width: 230px;
 }
 
-/*Navigation*/
+/*####################################   NAVIGATION  ####################################*/
 nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -181,9 +192,8 @@ nav ul {
   margin: 0px;
 }
 
-nav li {
+nav ul li {
   font-size: 60px;
-  list-style: none;
   text-transform: uppercase;
   margin: 20px;
   margin-top: 5px;
@@ -191,32 +201,33 @@ nav li {
   padding: 5px;
 }
 
-nav ul a {
-  text-decoration: none;
+nav ul li a {
   text-shadow: 6px 6px black;
-  color: #56e686;
+  color: #c9af1f;
 }
 
-nav ul a:hover {
-  color: white;
+nav ul li a:hover {
+  color: #f77b55;
 }
 
 #current_page {
   color: rgba(255, 255, 255, 0.75);
 }
 
-/*Pied*/
+/*####################################   FOOTER  ####################################*/
 footer {
-  background-color: rgba(0, 0, 0, 0.75);
+  background-color: rgba(0, 0, 0, 0.6);
   margin-top: 80px;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 20px;
+  padding-left: 10%;
+  padding-right: 10%;
   position: relative;
   bottom: 0px;
 }
 
 footer h2 {
+  font-size: 40px;
   color: white;
   padding-bottom: 20px;
 }
@@ -240,14 +251,11 @@ footer ul {
 }
 
 footer li {
-  list-style: none;
   margin-bottom: 20px;
 }
 
 footer li a {
   font-family: "OpenSans","sans-serif";
-  text-decoration: none;
-  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,24 +271,23 @@ footer li a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 30px;
+  font-size: 28px;
+}
+
+footer li a:hover {
+  color: #f77b55;
 }
 
 footer li img {
-  width: 20vw;
-  height: 20vw;
-  max-width: 60px;
-  max-height: 60px;
+  width: 50px;
+  height: 50px;
   margin-right: 10px;
 }
 
-/*Contenu*/
+/*####################################   CONTENU PRINCIPALE  ####################################*/
 section {
-  background: -webkit-gradient(linear, left top, left bottom, from(#00000086), to(#c9716e31));
-  background: linear-gradient(#00000086, #c9716e31);
-  border-top: 10px rgba(0, 0, 0, 0.5) solid;
-  border-bottom: 10px rgba(255, 255, 255, 0.5) solid;
-  border-radius: 1em;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
   padding: 30px;
   font-family: "OpenSans","sans-serif";
   display: -webkit-box;
@@ -322,8 +329,11 @@ article {
 }
 
 article a {
-  color: #fda494;
-  text-decoration: none;
+  color: #f7d955;
+}
+
+article a:hover {
+  color: #f77b55;
 }
 
 .main_text {
@@ -351,6 +361,44 @@ article a {
   padding-bottom: 30px;
 }
 
+.main_button {
+  text-align: center;
+}
+
+.main_button .main_button-content {
+  background: url("../../assets/spr_button.png") repeat-x;
+  -webkit-box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+          box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+  border: 3px black solid;
+  border-radius: 20px;
+  overflow: hidden;
+  -webkit-transition-property: -webkit-transform;
+  transition-property: -webkit-transform;
+  transition-property: transform;
+  transition-property: transform, -webkit-transform;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+.main_button .main_button-content a {
+  font-family: "SuperMario","sans-serif";
+  font-size: 60px;
+  padding: 10px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.main_button .main_button-content:hover {
+  color: white;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.main_button-details {
+  text-shadow: 3px 3px 6px black;
+  margin: 20px;
+}
+
 .balance {
   font-weight: normal;
 }
@@ -361,5 +409,40 @@ article a {
 
 .balance_nerf {
   color: #ff4d4d;
+}
+
+/*####################################   MOBILE  ####################################*/
+@media screen and (max-width: 900px) {
+  main {
+    padding: 15px;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  header {
+    margin-bottom: 50px;
+  }
+  header img {
+    width: 75%;
+  }
+  nav ul li {
+    margin-left: 0;
+    font-size: 45px;
+  }
+  .main_button .main_button-content a {
+    font-size: 40px;
+  }
+  footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  footer h2 {
+    font-size: 30px;
+    padding-bottom: 15px;
+  }
+  footer li a {
+    font-size: 22px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
