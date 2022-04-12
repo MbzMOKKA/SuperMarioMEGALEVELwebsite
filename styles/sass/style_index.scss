@@ -3,21 +3,35 @@
 @import "./utils/keyframes";
 
 article{
-    padding-right: 20px;
+    padding-right: 36px;
 }
-/*Illustrations de coté*/
+.main_text{
+    p{
+        margin-bottom: 24px;
+    }
+}
 aside{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 0px;
-    margin: 0px;
     flex: 1;
-}
-aside img{
-    width: 100%;
-    box-shadow: 5px 5px 20px black;
+    img{
+        width: 100%;
+        box-shadow: 5px 5px 20px black;
+    }
 }
 .main_button{
     margin-top: 70px;
+}
+/*####################################   MOBILE  ####################################*/
+@media screen and (max-width: $width-mobile-max){
+    article{
+        padding: 0px;
+    }
+    aside{
+        margin-top: 48px;
+        img{
+            margin-bottom: 24px;
+        }
+    }
 }

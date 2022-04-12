@@ -2,15 +2,25 @@
 @import "./utils/mixins";
 @import "./utils/keyframes";
 
-em{
-    font-style: normal;
-    font-weight: bold;
-    color: aqua;
-}
 .patch-list{
     li{
+        font-size: 24px;
         list-style: square inside;
         margin-left: 20px;
         margin-bottom: 10px;
+    }
+}
+/*####################################   MOBILE  ####################################*/
+@media screen and (max-width: $width-mobile-max){
+    .patch-list{
+        li{
+            font-size: 18px;
+            list-style: square inside;
+            margin-left: 0px;
+            margin-bottom: 5px;
+            &::marker{
+                font-size: 10px;
+            }
+        }
     }
 }

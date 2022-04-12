@@ -27,10 +27,6 @@ body{
     background-image: url("../../assets/spr_background.png");
     background-attachment: fixed;
 }
-h1{
-    margin-bottom: 30px;
-    font-size: 50px;
-}
 h2{
     @include font-mario();
     font-size: 60px;
@@ -41,6 +37,11 @@ li{
 }
 a{
     text-decoration: none;
+}
+em{
+    font-style: normal;
+    font-weight: bold;
+    color: aqua;
 }
 main{
     width: 100%;
@@ -153,11 +154,8 @@ article{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 0px;
-    margin: 0px;
-    text-align: left;
     flex: 2;
-    color :rgb(221, 221, 221);
+    color: rgb(221, 221, 221);
     a{
         color: $color-link;
         &:hover{
@@ -172,10 +170,14 @@ article{
     align-items: flex-start;
     justify-content: flex-start;
     flex-wrap: wrap;
+    h1{
+        font-weight: bold; 
+        margin-bottom: 30px;
+        font-size: 50px;
+    }
     p{
         font-weight: bold;
-        margin: 0px;
-        padding-bottom: 30px;
+        font-size: 24px;
     }
 }
 .main_button{
@@ -187,7 +189,7 @@ article{
         border-radius: 20px;
         overflow: hidden;
         transition-property: transform;
-        transition-duration: 0.3s;
+        transition-duration: 300ms;
         a{
             @include font-mario();
             font-size: 60px;
@@ -198,6 +200,10 @@ article{
         &:hover{
             color: white;
             transform: scale(1.1);
+        }
+        &:active{
+            transform: scale(0.9);
+            transition-duration: 150ms;
         }
     }
     &-details{
@@ -222,23 +228,45 @@ article{
         padding-bottom: 0;
     }
     header{
-        margin-bottom: 50px;
+        padding-top: 50px;
+        margin-bottom: 40px;
         img{
             width: 75%;
         }
     }
     nav ul{
+        margin-bottom: 10px;
         li{
-            margin-left: 0;
-            font-size: 45px;
+            font-size: 40px;
+            margin: 20px;
+            margin-left: 10px;
+            margin-top: 0px;
+            margin-bottom: 2px;
+            padding: 0px;
         }
     }
     .main_button{
         .main_button-content{
             a{
-                font-size: 40px;
+                font-size: 50px;
             }
         }
+    }
+    .main_text{
+        h1{
+            font-size: 33px;
+        }
+        p{
+            font-size: 18px;
+            font-weight: normal;
+        }
+    }
+    h2{
+        font-size: 40px;
+    }
+    section{
+        padding: 15px;
+        flex-direction: column;
     }
     footer{
         padding-top: 20px;

@@ -102,8 +102,6 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 0px;
-  margin: 0px;
 }
 
 #teasers li {
@@ -174,5 +172,27 @@
           transform: scale(1.4);
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
+}
+
+/*####################################   MOBILE  ####################################*/
+@media screen and (max-width: 900px) {
+  #teasers {
+    width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  #teasers li {
+    width: 100%;
+    height: 240px;
+  }
 }
 /*# sourceMappingURL=style_teasers.css.map */

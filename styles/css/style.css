@@ -118,11 +118,6 @@ body {
   background-attachment: fixed;
 }
 
-h1 {
-  margin-bottom: 30px;
-  font-size: 50px;
-}
-
 h2 {
   font-family: "SuperMario","sans-serif";
   font-size: 60px;
@@ -137,9 +132,15 @@ a {
   text-decoration: none;
 }
 
+em {
+  font-style: normal;
+  font-weight: bold;
+  color: aqua;
+}
+
 main {
   width: 100%;
-  padding: 10%;
+  padding: 8%;
   padding-top: 0;
   padding-bottom: 0;
   margin: auto;
@@ -203,7 +204,7 @@ nav ul li {
 
 nav ul li a {
   text-shadow: 6px 6px black;
-  color: #c9af1f;
+  color: #e0de52;
 }
 
 nav ul li a:hover {
@@ -216,12 +217,12 @@ nav ul li a:hover {
 
 /*####################################   FOOTER  ####################################*/
 footer {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   margin-top: 80px;
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding-left: 8%;
+  padding-right: 8%;
   position: relative;
   bottom: 0px;
 }
@@ -286,7 +287,7 @@ footer li img {
 
 /*####################################   CONTENU PRINCIPALE  ####################################*/
 section {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.5);
   border-radius: 20px;
   padding: 30px;
   font-family: "OpenSans","sans-serif";
@@ -319,9 +320,6 @@ article {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px;
-  margin: 0px;
-  text-align: left;
   -webkit-box-flex: 2;
       -ms-flex: 2;
           flex: 2;
@@ -355,10 +353,15 @@ article a:hover {
       flex-wrap: wrap;
 }
 
+.main_text h1 {
+  font-weight: bold;
+  margin-bottom: 30px;
+  font-size: 50px;
+}
+
 .main_text p {
   font-weight: bold;
-  margin: 0px;
-  padding-bottom: 30px;
+  font-size: 24px;
 }
 
 .main_button {
@@ -376,8 +379,8 @@ article a:hover {
   transition-property: -webkit-transform;
   transition-property: transform;
   transition-property: transform, -webkit-transform;
-  -webkit-transition-duration: 0.3s;
-          transition-duration: 0.3s;
+  -webkit-transition-duration: 300ms;
+          transition-duration: 300ms;
 }
 
 .main_button .main_button-content a {
@@ -392,6 +395,13 @@ article a:hover {
   color: white;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+.main_button .main_button-content:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition-duration: 150ms;
+          transition-duration: 150ms;
 }
 
 .main_button-details {
@@ -414,28 +424,53 @@ article a:hover {
 /*####################################   MOBILE  ####################################*/
 @media screen and (max-width: 900px) {
   main {
-    padding: 15px;
+    padding: 12px;
     padding-top: 0;
     padding-bottom: 0;
   }
   header {
-    margin-bottom: 50px;
+    padding-top: 50px;
+    margin-bottom: 40px;
   }
   header img {
     width: 75%;
   }
+  nav ul {
+    margin-bottom: 10px;
+  }
   nav ul li {
-    margin-left: 0;
-    font-size: 45px;
+    font-size: 40px;
+    margin: 20px;
+    margin-left: 10px;
+    margin-top: 0px;
+    margin-bottom: 2px;
+    padding: 0px;
   }
   .main_button .main_button-content a {
+    font-size: 50px;
+  }
+  .main_text h1 {
+    font-size: 33px;
+  }
+  .main_text p {
+    font-size: 18px;
+    font-weight: normal;
+  }
+  h2 {
     font-size: 40px;
+  }
+  section {
+    padding: 15px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   footer {
     padding-top: 20px;
     padding-bottom: 20px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 12px;
+    padding-right: 12px;
   }
   footer h2 {
     font-size: 30px;
