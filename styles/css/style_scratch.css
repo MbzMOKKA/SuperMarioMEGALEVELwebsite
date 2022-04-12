@@ -99,7 +99,7 @@ iframe {
 /*####################################   MOBILE  ####################################*/
 @media screen and (max-width: 900px) {
   iframe {
-    height: auto;
+    height: 100vw;
     margin-top: 24px;
   }
 }
