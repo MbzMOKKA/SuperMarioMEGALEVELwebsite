@@ -252,8 +252,8 @@ input[type="checkbox"]:checked + label h2, input[type="checkbox"]:checked + labe
 }
 
 .load__bar--1-inv {
-  -webkit-animation-delay: 1070ms;
-          animation-delay: 1070ms;
+  -webkit-animation-delay: 335ms;
+          animation-delay: 335ms;
   animation-direction: alternate-reverse;
   background-color: #0E397F;
 }
@@ -264,8 +264,8 @@ input[type="checkbox"]:checked + label h2, input[type="checkbox"]:checked + labe
 }
 
 .load__bar--2-inv {
-  -webkit-animation-delay: 175ms;
-          animation-delay: 175ms;
+  -webkit-animation-delay: 385ms;
+          animation-delay: 385ms;
   animation-direction: alternate-reverse;
   background-color: #0E397F;
 }
@@ -276,8 +276,8 @@ input[type="checkbox"]:checked + label h2, input[type="checkbox"]:checked + labe
 }
 
 .load__bar--3-inv {
-  -webkit-animation-delay: 1125ms;
-          animation-delay: 1125ms;
+  -webkit-animation-delay: 1695ms;
+          animation-delay: 1695ms;
   animation-direction: alternate-reverse;
   background-color: #0E397F;
 }
@@ -288,8 +288,8 @@ input[type="checkbox"]:checked + label h2, input[type="checkbox"]:checked + labe
 }
 
 .load__bar--4-inv {
-  -webkit-animation-delay: 680ms;
-          animation-delay: 680ms;
+  -webkit-animation-delay: 1040ms;
+          animation-delay: 1040ms;
   animation-direction: alternate-reverse;
   background-color: #0E397F;
 }
@@ -300,8 +300,8 @@ input[type="checkbox"]:checked + label h2, input[type="checkbox"]:checked + labe
 }
 
 .load__bar--5-inv {
-  -webkit-animation-delay: 1030ms;
-          animation-delay: 1030ms;
+  -webkit-animation-delay: 1345ms;
+          animation-delay: 1345ms;
   animation-direction: alternate-reverse;
   background-color: #0E397F;
 }
@@ -309,5 +309,28 @@ input[type="checkbox"]:checked + label h2, input[type="checkbox"]:checked + labe
 .load__bar:hover {
   -webkit-animation-play-state: paused;
           animation-play-state: paused;
+}
+
+.tooltip-test {
+  color: red;
+}
+
+.tooltip {
+  color: green;
+  position: relative;
+}
+
+.tooltip::before {
+  content: attr(tooltip-content-custom-var-btw);
+  background-color: white;
+  padding: 5px;
+  position: absolute;
+  left: 0%;
+  bottom: 200%;
+  visibility: hidden;
+}
+
+.tooltip:hover::before {
+  visibility: visible;
 }
 /*# sourceMappingURL=style_test.css.map */

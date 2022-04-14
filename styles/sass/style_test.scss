@@ -147,3 +147,24 @@ $cube-size : 100px;
         }
     }
 }
+.tooltip-test{
+    color: red;
+}
+.tooltip{
+    color: green;
+    position: relative;
+    &::before{
+        content: attr(tooltip-content-custom-var-btw);
+        background-color: white;
+        padding: 5px;
+        position: absolute;
+        left: 0%;
+        bottom: 200%;
+        visibility:hidden;
+    }
+    &:hover{
+        &::before{
+            visibility:visible;
+        }
+    }
+}
