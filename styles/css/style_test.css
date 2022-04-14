@@ -252,8 +252,8 @@ input[type="checkbox"]:checked + label h2, input[type="checkbox"]:checked + labe
 }
 
 .load__bar--1-inv {
-  -webkit-animation-delay: 665ms;
-          animation-delay: 665ms;
+  -webkit-animation-delay: 1070ms;
+          animation-delay: 1070ms;
   animation-direction: alternate-reverse;
   background-color: #0E397F;
 }
@@ -264,8 +264,8 @@ input[type="checkbox"]:checked + label h2, input[type="checkbox"]:checked + labe
 }
 
 .load__bar--2-inv {
-  -webkit-animation-delay: 940ms;
-          animation-delay: 940ms;
+  -webkit-animation-delay: 175ms;
+          animation-delay: 175ms;
   animation-direction: alternate-reverse;
   background-color: #0E397F;
 }
@@ -276,8 +276,8 @@ input[type="checkbox"]:checked + label h2, input[type="checkbox"]:checked + labe
 }
 
 .load__bar--3-inv {
-  -webkit-animation-delay: 1605ms;
-          animation-delay: 1605ms;
+  -webkit-animation-delay: 1125ms;
+          animation-delay: 1125ms;
   animation-direction: alternate-reverse;
   background-color: #0E397F;
 }
@@ -288,8 +288,8 @@ input[type="checkbox"]:checked + label h2, input[type="checkbox"]:checked + labe
 }
 
 .load__bar--4-inv {
-  -webkit-animation-delay: 365ms;
-          animation-delay: 365ms;
+  -webkit-animation-delay: 680ms;
+          animation-delay: 680ms;
   animation-direction: alternate-reverse;
   background-color: #0E397F;
 }
@@ -300,8 +300,8 @@ input[type="checkbox"]:checked + label h2, input[type="checkbox"]:checked + labe
 }
 
 .load__bar--5-inv {
-  -webkit-animation-delay: 1735ms;
-          animation-delay: 1735ms;
+  -webkit-animation-delay: 1030ms;
+          animation-delay: 1030ms;
   animation-direction: alternate-reverse;
   background-color: #0E397F;
 }

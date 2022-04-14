@@ -22,10 +22,11 @@
     margin: 0;
     padding: 0;
     color: #FFF;
+    cursor: url(../../assets/smml_cursor.png), auto;
 }
 body{
     background-image: url("../../assets/spr_background.png");
-    background-attachment: fixed;
+    background-attachment: fixed; 
 }
 h2{
     @include font-mario();
@@ -222,6 +223,9 @@ article{
 }
 /*####################################   MOBILE  ####################################*/
 @media screen and (max-width: $width-mobile-max){
+    /**{
+        cursor: auto;
+    }*/
     main{
         padding: $page-content-mobile-padding;
         padding-top: 0;

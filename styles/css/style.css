@@ -111,6 +111,7 @@
   margin: 0;
   padding: 0;
   color: #FFF;
+  cursor: url(../../assets/smml_cursor.png), auto;
 }
 
 body {
@@ -423,6 +424,9 @@ article a:hover {
 
 /*####################################   MOBILE  ####################################*/
 @media screen and (max-width: 900px) {
+  /**{
+        cursor: auto;
+    }*/
   main {
     padding: 12px;
     padding-top: 0;
