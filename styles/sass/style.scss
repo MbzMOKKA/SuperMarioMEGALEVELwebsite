@@ -55,8 +55,8 @@ main{
 }
 /*####################################   HEADER  ####################################*/
 header{
-    padding-top: 70px;
-    margin-bottom: 100px;
+    padding-top: 60px;
+    margin-bottom: 80px;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -223,19 +223,16 @@ article{
 }
 /*####################################   MOBILE  ####################################*/
 @media screen and (max-width: $width-mobile-max){
-    /**{
-        cursor: auto;
-    }*/
     main{
         padding: $page-content-mobile-padding;
         padding-top: 0;
         padding-bottom: 0;
     }
     header{
-        padding-top: 50px;
-        margin-bottom: 40px;
+        padding-top: 20px;
+        margin-bottom: 20px;
         img{
-            width: 75%;
+            width: 66%;
         }
     }
     nav ul{
