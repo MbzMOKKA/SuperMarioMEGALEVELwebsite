@@ -382,12 +382,11 @@ article a:hover {
   transition-property: transform, -webkit-transform;
   -webkit-transition-duration: 300ms;
           transition-duration: 300ms;
-}
-
-.main_button .main_button-content a {
   font-family: "SuperMario","sans-serif";
-  font-size: 60px;
+  font-size: 50px;
   padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   color: white;
   text-transform: uppercase;
 }
@@ -447,8 +446,8 @@ article a:hover {
     margin-bottom: 2px;
     padding: 0px;
   }
-  .main_button .main_button-content a {
-    font-size: 50px;
+  .main_button .main_button-content {
+    font-size: 10vw;
   }
   .main_text h1 {
     font-size: 33px;

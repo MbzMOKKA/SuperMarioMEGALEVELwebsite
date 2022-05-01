@@ -191,13 +191,13 @@ article{
         overflow: hidden;
         transition-property: transform;
         transition-duration: 300ms;
-        a{
-            @include font-mario();
-            font-size: 60px;
-            padding: 10px;
-            color: white;
-            text-transform: uppercase;
-        }
+        @include font-mario();
+        font-size: 50px;
+        padding: 10px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: white;
+        text-transform: uppercase;
         &:hover{
             color: white;
             transform: scale(1.1);
@@ -248,9 +248,7 @@ article{
     }
     .main_button{
         .main_button-content{
-            a{
-                font-size: 50px;
-            }
+            font-size: 10vw;
         }
     }
     .main_text{
