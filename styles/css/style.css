@@ -91,6 +91,7 @@
   src: url("../../fonts/OpenSans-Regular-webfont.woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
@@ -98,6 +99,7 @@
   src: url("../../fonts/SuperMario.ttf");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
