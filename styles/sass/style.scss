@@ -69,9 +69,21 @@ header{
     flex-wrap: nowrap;
     justify-content: center;
     align-items: center;
-    img{
-        width: 50%;
+    a{
+        width: 60%;
         max-width: 450px;
+        transition-duration: 0.15s;
+        transition-timing-function: ease;
+        &:active{
+            transform: scale(0.95);
+        }
+        img{
+            margin: 0;
+            padding: 0;
+            margin-left: auto;
+            margin-right: auto;
+            width: 100%;
+        }
     }
 }
 /*####################################   NAVIGATION  ####################################*/
@@ -109,8 +121,6 @@ footer{
     padding-bottom: 20px;
     padding-left: $page-content-desktop-padding;
     padding-right: $page-content-desktop-padding;
-    position: relative;
-    bottom: 0px;
     h2{
         font-size: 40px;
         color: white;
