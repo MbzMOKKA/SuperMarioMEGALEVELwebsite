@@ -1,35 +1,16 @@
-@keyframes progress-bar{
-    0%{
-        transform: scaleX(0) scaleY(0.5);
-    }
-    100%{
-        transform: scaleX(1) scaleY(0.5);
-    }
-}
-$shake-intensity: 2%;
-@keyframes headshake {
-    25% {
-        // entièrement à droite
-        transform: translateX($shake-intensity);
-    }
-    75% {
-        // entièrement à gauche
-        transform: translateX(-1*$shake-intensity);
-    }
-}
-@keyframes bars {
+@keyframes anim_media_viewer_fade_in {
     0% {
-        transform: scaleY(0.25);
+        opacity: 0;
     }
     100% {
-        transform: scaleY(1.0);
+        opacity: 1;
     }
 }
-@keyframes spin {
-    from {
-        transform: rotate(0deg);
+@keyframes anim_media_viewer_media_appear {
+    0% {
+        transform: scale(0);
     }
-    to {
-        transform: rotate(360deg);
+    100% {
+        transform: scale(1);
     }
 }
