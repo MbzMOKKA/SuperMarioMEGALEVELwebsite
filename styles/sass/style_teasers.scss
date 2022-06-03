@@ -134,23 +134,7 @@
         }
     }
 }
-#teaser_viewer{
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.7);
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    &_media{
-        border-radius: 20px;
-        overflow: hidden;
-        width: 70%;
-    }
-}
+
 /*####################################   MOBILE  ####################################*/
 
 @media screen and (max-width: $width-mobile-max){
@@ -173,11 +157,6 @@
                 left: 10px;
                 font-size: 20px;
             }
-        }
-    }
-    #teaser_viewer{
-        &_media{
-            width: 90%;
         }
     }
 }

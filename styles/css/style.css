@@ -439,6 +439,34 @@ article a:hover {
   color: #ff4d4d;
 }
 
+#media_viewer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#media_viewer_media {
+  border-radius: 20px;
+  overflow: hidden;
+  width: 70%;
+}
+
 /*####################################   MOBILE  ####################################*/
 @media screen and (max-width: 900px) {
   main {
@@ -496,6 +524,9 @@ article a:hover {
   }
   footer li a {
     font-size: 22px;
+  }
+  #media_viewer_media {
+    width: 90%;
   }
 }
 /*# sourceMappingURL=style.css.map */

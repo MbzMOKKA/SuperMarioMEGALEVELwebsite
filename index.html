@@ -51,14 +51,19 @@
                         </p>
                      </div>
                     <div class="main_button">
-                        <button class="main_button-content">Télécharger</button>
+                        <script>
+                            function DownloadUnavailable(){
+                                window.alert("Téléchargement public indisponible");
+                            }
+                        </script>
+                        <button class="main_button-content" onclick="DownloadUnavailable();">Télécharger</button>
                         <div class="main_button-details">version 3.0</div>
                     </div>
                 </article>
                 <aside>
-                    <img src="assets/gameplay_01.jpg" alt="gameplay example 1">
-                    <img src="assets/gameplay_02.jpg" alt="gameplay example 2">
-                    <img src="assets/gameplay_03.jpg" alt="gameplay example 3">
+                    <img src="assets/gameplay_01.jpg" alt="extrait de gameplay 1" onclick="OpenMediaViewer('img', src, alt);">
+                    <img src="assets/gameplay_02.jpg" alt="extrait de gameplay 2" onclick="OpenMediaViewer('img', src, alt);">
+                    <img src="assets/gameplay_03.jpg" alt="extrait de gameplay 3" onclick="OpenMediaViewer('img', src, alt);">
                 </aside>
             </section>
         </main>
@@ -70,4 +75,6 @@
                 <li><a href="https://www.dropbox.com/" target="_blank"><img src="assets/icon_dropbox.png" alt="dropbox icon">Anciennes versions</a></li>
             </ul>
         </footer>
+        <div id="media_viewer_container"></div>
+        <script src="javascript/media_viewer.js"></script>
     </body>

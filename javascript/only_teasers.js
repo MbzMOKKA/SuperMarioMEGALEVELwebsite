@@ -54,26 +54,8 @@ function OpenTeaser(){
     let _teaser_obj = teasers_content[_teaser_index];
 
     //création du lecteur
-    let _viewer = document.createElement("div");
-    _viewer.setAttribute("id","teaser_viewer");
-    _viewer.addEventListener("click",CloseTeaser);
-
-    //remplissage du media
-    let _media = document.createElement(_teaser_obj.type);
-    _media.setAttribute("id","teaser_viewer_media");
-    _media.setAttribute("src",_teaser_obj.src);
-    _media.setAttribute("alt",_teaser_obj.alt);
-    _media.addEventListener("click",PreventClosingTeaser);
-    if(_teaser_obj.type=="video"){
-        _media.setAttribute("controls","true");
-        _media.setAttribute("loop","true");
-        _media.setAttribute("autoplay","true");
-    }
-
-    //application à la page
-    _viewer.appendChild(_media);
-    document.getElementById("teasers").appendChild(_viewer);
-
+    OpenMediaViewer(_teaser_obj.type, _teaser_obj.src, _teaser_obj.alt);
+  
     //confirmation vu teaser
     if(_teaser_obj.viewed==false){
         let _teaser = event.target;
@@ -82,17 +64,6 @@ function OpenTeaser(){
         _teaser_obj.viewed = true;
         ToLocalStorageTeaserDataSave();
     }
-}
-
-//fermer un teaser
-function CloseTeaser(){
-    let _viewer = document.getElementById("teaser_viewer");
-    _viewer.parentElement.removeChild(_viewer);
-}
-
-//empecher le teaser de se fermer si on clique sur son media
-function PreventClosingTeaser(){
-    event.stopPropagation();
 }
 
 
