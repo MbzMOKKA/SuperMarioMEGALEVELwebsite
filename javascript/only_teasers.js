@@ -45,7 +45,7 @@ teasers_content[5] = {
 teasers_content[6] = {
     viewed : false,
     type : "img",
-    src : "https://cdn.discordapp.com/attachments/736608577141080104/982743850709844008/4_0_teaser_7.png",
+    src : "https://cdn.discordapp.com/attachments/851546956215484426/982747423271165962/4_0_teaser_7.png",
     alt : "révélations #7 : 4.0 au lieu de 3.1 et champs de vision +7%",
 }
 
